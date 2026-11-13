@@ -29,8 +29,18 @@ SKIP_SETUP=1 ./install.sh          # только обновить модуль 
 Ключ уходит в теле JSON-запроса (так устроен chad Image API), поэтому
 подстановка ключа в заголовки через прокси здесь не работает.
 
-Сеть: нужен доступ к `ask.chadgpt.ru` и к CDN, с которого chad отдаёт
-готовые файлы (адрес CDN станет известен после первой генерации).
+Сеть: нужен доступ к `ask.chadgpt.ru` (API) и
+`chad-generated-images.storage.yandexcloud.net` (CDN, с которого chad отдаёт
+готовые картинки, в формате WebP). Если скачивание упало, а генерация прошла,
+результат можно забрать повторно по `content_id` из текста ошибки, не платя
+за новую генерацию:
+
+```python
+from pathlib import Path
+from tools.chadgpt_api import wait_for_output, download
+urls = wait_for_output("<content_id>")
+download(urls[0], Path("out.png"), default_ext=".png")  # расширение подставится по типу файла
+```
 
 ## Что добавляется
 
@@ -84,7 +94,8 @@ chad не документирует видео в API. Без ключа мар
 cd ../OpenMontage && .venv/bin/python -m pytest tests/tools/test_chadgpt.py -q
 ```
 
-Тесты не ходят в сеть и не требуют ключа.
+Тесты не ходят в сеть и не требуют ключа. `install.sh` ставит `pytest` в
+`.venv` и прогоняет их сам.
 
 ## Лицензия
 

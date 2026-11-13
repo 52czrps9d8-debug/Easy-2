@@ -49,6 +49,10 @@ if [ ! -x "$PY" ]; then
   exit 0
 fi
 
+if ! "$PY" -c "import pytest" 2>/dev/null; then
+  echo "==> Installing pytest into .venv (for the chad adapter tests)"
+  "$PY" -m pip install -q pytest || echo "    (pytest install failed: skipping tests)"
+fi
 if "$PY" -c "import pytest" 2>/dev/null; then
   echo "==> Running chad adapter tests"
   (cd "$OM_DIR" && .venv/bin/python -m pytest tests/tools/test_chadgpt.py -q -p no:cacheprovider)
