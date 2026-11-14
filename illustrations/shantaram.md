@@ -154,3 +154,15 @@ An Indian man about thirty years old, clearly an adult, short and slim but with 
 - Кадербхай: distinguished man around sixty, close-cropped silver hair, neat silver beard, penetrating amber eyes, calm wise powerful; white kurta; courtyard with arches, lamplight.
 - Казим Али: elderly man, thin serious face, henna-dyed reddish beard, calm wise gaze; white clothing; slum with huts and laundry lines. (борода вышла седой, не рыжей)
 - Джонни Сигара: Indian man about thirty, thin wiry, cigarette in lips, lively clever face, tousled black hair, mocking look; simple shirt; slum.
+
+## Ролик «Леопольд» (43 с, 16:9)
+
+Кадры: `gemini-2.5-flash-image`, 16:9, портреты персонажей переданы как референсы
+(`image_paths`) + фраза «Keep the faces, hair and clothing of the people exactly as in the
+reference portraits». Сцены: улица Колаба и вход в кафе на закате → зал с вентиляторами →
+Лин в арке → Карла и Дидье за столиком → Викрам и Летти → вся компания за длинным столом.
+Монтаж: Remotion (Explainer, `remotion_render`), анимации zoom-in / pan-right / zoom-in /
+pan-left / ken-burns / zoom-out, переходы fade 0.9 с, титры hero_title («Шантарам —
+Бомбей, начало 80-х», «Леопольд — место, где всё начинается») и section_title с именами,
+акцент #e0a458. Музыка: Pixabay, запрос «bombay cafe ambient india» (AtlasAudio).
+Для Remotion нужен `remotion_browser_executable` = chrome-headless-shell из /opt/pw-browsers.
