@@ -130,3 +130,27 @@ An Indian man about thirty years old, clearly an adult, short and slim but with 
 
 Заметки по технике: связь с chad из облака нестабильна — `submit` вызывать с
 `timeout=180` (по умолчанию 60 обрывается), повтор только с согласия (риск двойной оплаты).
+
+## Серия 1 — готово (`gemini-2.5-flash-image`, 2:3, промпт персонажа + STYLE)
+
+Все 16 портретов сделаны, собраны в PDF «Шантарам_персонажи» (стр. 1 — шпаргалка
+«кто есть кто» по группам: Бомбей и «Леопольд» / Деревня Сундер / Трущобы и мафия;
+дальше по странице на персонажа). Прабакер — вариант 2.
+
+Промпты персонажей (к каждому добавляется STYLE):
+
+- Лин: Australian man about thirty, tall, broad-shouldered, short sandy-blond hair, unshaven, weathered face with a small scar, tired but warm curious eyes, wary posture; light shirt with rolled sleeves, worn jeans, backpack; busy Colaba street.
+- Карла: European woman about thirty, straight black shoulder-length hair, fair skin, bright green eyes, calm slightly ironic expression; elegant loose blouse, light shawl; old cafe-bar with ceiling fans and arches.
+- Дидье: French man late thirties, thick dark curly hair, tired clever eyes, stubble, pale, cigarette, sardonic half-smile; rumpled light shirt, glass on table; cafe-bar at evening.
+- Улла: German woman mid-twenties, fragile, light blonde hair, large blue eyes, soft weary features; light summer dress; cafe-bar.
+- Модена: Spanish man about thirty, thin, olive-skinned, dark slicked-back hair, silent, very still; dark shirt; dim cafe-bar.
+- Викрам: Indian man mid-twenties dressed as a western cowboy: black flat-brimmed hat, black waistcoat, silver-studded belt; lively charming, lovesick; street outside cafe-bar.
+- Летти: English woman about thirty, light hair, clever grey eyes, wry half-smile; 1980s summer blouse; cafe-bar.
+- Маурицио: Italian man about thirty, tall, very handsome, wavy dark hair, confident smile with greed and danger in the eyes; open-collared expensive shirt; street at dusk.
+- Мадам Жу: mysterious woman glimpsed through an ornate carved wooden screen and veil, pale face, dark lips, cold commanding gaze, dark silk, candlelit dim room, face partly in shadow.
+- Кишан: cheerful village farmer around fifty, short, wide warm grin, white shirt and white turban; rural Maharashtra fields.
+- Рукхмабай: dignified village woman around forty-five, tall, upright, serious warm gaze, bright sari; rural Maharashtra.
+- Абдулла: Iranian man about thirty, tall athletic, long black hair, dark eyes, calm handsome face, dressed in black, fighter's stance; Bombay street at night. (вышел в полный рост — при перерисовке добавить «waist-up»)
+- Кадербхай: distinguished man around sixty, close-cropped silver hair, neat silver beard, penetrating amber eyes, calm wise powerful; white kurta; courtyard with arches, lamplight.
+- Казим Али: elderly man, thin serious face, henna-dyed reddish beard, calm wise gaze; white clothing; slum with huts and laundry lines. (борода вышла седой, не рыжей)
+- Джонни Сигара: Indian man about thirty, thin wiry, cigarette in lips, lively clever face, tousled black hair, mocking look; simple shirt; slum.
