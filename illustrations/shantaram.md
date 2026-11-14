@@ -112,7 +112,7 @@ not resembling any real actor or celebrity.
 
 ## Промпты и результаты
 
-### Прабакер — проба (промпт; модель выбирается)
+### Прабакер — проба, `gemini-2.5-flash-image`, 2:3 — удачно (вышел моложе, чем нужно: в следующий раз добавить «late twenties»)
 
 ```
 A young Indian man in his mid-twenties, short and slim, with a round friendly face, large dark
@@ -121,3 +121,6 @@ face, head tilted slightly to the side. He wears a simple untucked short-sleeved
 and plain trousers. Background: a crowded Bombay street in the early 1980s, softly blurred —
 taxis, street vendors, colonial buildings. + STYLE
 ```
+
+Заметки по технике: связь с chad из облака нестабильна — `submit` вызывать с
+`timeout=180` (по умолчанию 60 обрывается), повтор только с согласия (риск двойной оплаты).
