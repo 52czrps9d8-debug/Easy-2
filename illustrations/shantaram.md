@@ -122,5 +122,11 @@ and plain trousers. Background: a crowded Bombay street in the early 1980s, soft
 taxis, street vendors, colonial buildings. + STYLE
 ```
 
+### Прабакер — вариант 2, `gemini-2.5-flash-image`, 2:3 — взрослый (возможно, чуть старше 30)
+
+```
+An Indian man about thirty years old, clearly an adult, short and slim but with a grown man's build, a round friendly face with defined cheekbones, light stubble, laugh lines around his large dark expressive eyes, short black hair, and a huge, beaming, toothy smile that lights up his whole face, head tilted slightly to the side. Street-wise, experienced look of a man who knows every corner of the city. He wears a simple untucked short-sleeved cotton shirt and plain trousers. Background: a crowded Bombay street in the early 1980s, softly blurred - taxis, street vendors, colonial buildings. + STYLE
+```
+
 Заметки по технике: связь с chad из облака нестабильна — `submit` вызывать с
 `timeout=180` (по умолчанию 60 обрывается), повтор только с согласия (риск двойной оплаты).
